@@ -1,0 +1,3 @@
+# Nur der Ordner "site" ist die Website. Alles andere bleibt privat.
+[build]
+  publish = "site"
