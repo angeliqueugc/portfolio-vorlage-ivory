@@ -3,7 +3,7 @@
 ## Über dich
 - Creator-Name: Angi
 - Creatorin seit: 3 Jahren
-- Nische(n): [offen]
+- Nische(n): Beauty und Lifestyle
 - E-Mail: [offen]
 - Social-Media-Links: [offen]
 - Stand (Anfängerin / Kooperationen): [offen]
