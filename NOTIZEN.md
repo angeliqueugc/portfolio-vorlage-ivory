@@ -4,7 +4,7 @@
 - Creator-Name: Angi
 - Creatorin seit: 3 Jahren
 - Nische(n): Beauty und Lifestyle
-- E-Mail: [offen]
+- E-Mail: Kontakt@soulundbrand.com
 - Social-Media-Links: [offen]
 - Stand (Anfängerin / Kooperationen): [offen]
 - Handy oder Laptop: [offen]
