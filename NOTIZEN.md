@@ -1,5 +1,7 @@
 # Notizen zu deiner Website
 
+> **Wichtig:** Das hier ist nur ein TEST von Angi (Soul & Brand, Verkäuferin der Vorlage), um den Ablauf für Käuferinnen auszuprobieren. Nicht veröffentlichen. Ihre echte Seite (soulundbrand) ist ein anderes Projekt.
+
 ## Über dich
 - Creator-Name: Angi
 - Creatorin seit: 3 Jahren
