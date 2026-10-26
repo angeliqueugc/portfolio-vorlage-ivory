@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Impressum · Dein Name</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+<style>
+@font-face{font-family:"Bodoni Moda";font-style:normal;font-weight:400 600;font-display:swap;src:url("schriften/bodoni-moda.woff2") format("woff2")}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:400 700;font-display:swap;src:url("schriften/dm-sans.woff2") format("woff2")}
+:root{--bg:#F6F2EA;--paper:#FBF9F4;--ink:#141112;--muted:#3F383A;--wine:#6E1020;--line:rgba(20,17,18,.16);--display:"Bodoni Moda",Didot,"Bodoni 72",Georgia,serif;--body:"DM Sans","Helvetica Neue",Arial,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:clamp(1rem,.97rem + .2vw,1.08rem);line-height:1.65;overflow-x:clip}
+a{color:inherit;text-underline-offset:.2em;text-decoration-color:var(--wine)}
+a:focus-visible{outline:3px solid var(--wine);outline-offset:3px}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.top{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.top-in{display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:4rem;max-width:1180px}
+.logo{text-decoration:none;font-family:var(--display);font-weight:600;font-size:1.2rem;letter-spacing:.08em;text-transform:uppercase}
+.logo i{color:var(--wine);font-style:normal}
+.back{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;text-decoration:none;color:var(--wine);border-bottom:1px solid var(--wine);padding-block:.3rem}
+main{padding-block:clamp(3rem,8vw,6rem)}
+.cap{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;font-weight:700;color:var(--wine)}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(2.6rem,7vw,4.4rem);line-height:1;margin:.8rem 0 2.4rem}
+h2{font-family:var(--display);font-weight:600;font-size:1.45rem;line-height:1.2;margin:2.4rem 0 .6rem}
+p,ul{margin:0 0 1rem;color:var(--muted)}
+ul{padding-left:1.2rem}
+.hint{background:var(--paper);border-left:3px solid var(--wine);padding:1rem 1.2rem;font-size:.92rem}
+.foot{background:var(--ink);color:#E9E3D9}
+.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-block:2rem;font-size:.88rem;max-width:1180px}
+.foot nav{display:flex;flex-wrap:wrap;gap:1.2rem}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap top-in"><a class="logo" href="index.html">Dein Name<i>.</i></a><a class="back" href="index.html">Zur Startseite</a></div></header>
+<main><div class="wrap">
+<span class="cap">Rechtliches</span>
+<h1>Impressum</h1>
+<h2>Angaben gemäß § 5 DDG</h2>
+<p>[VOR- UND NACHNAME EINTRAGEN]<br>[STRASSE UND HAUSNUMMER EINTRAGEN]<br>[PLZ UND ORT EINTRAGEN]<br>Deutschland</p>
+<h2>Kontakt</h2>
+<p>E-Mail: <a href="mailto:hallo@deinname.de">hallo@deinname.de</a><br>Telefon: [TELEFONNUMMER EINTRAGEN]</p>
+<h2>Umsatzsteuer</h2>
+<p>Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: [USt-IdNr. EINTRAGEN ODER DIESEN ABSCHNITT LÖSCHEN, FALLS KEINE VORHANDEN]</p>
+<h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+<p>[VOR- UND NACHNAME EINTRAGEN]<br>[ANSCHRIFT WIE OBEN]</p>
+<h2>Verbraucherstreitbeilegung</h2>
+<p>Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+<h2>Haftung für Links</h2>
+<p>Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Für diese fremden Inhalte ist stets die jeweilige Anbieterin oder der jeweilige Anbieter verantwortlich. Werden mir Rechtsverletzungen bekannt, entferne ich solche Links umgehend.</p>
+</div></main>
+<footer class="foot"><div class="wrap foot-in"><span>© DEIN NAME</span>
+<nav aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav></div></footer>
+</body>
+</html>
