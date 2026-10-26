@@ -11,10 +11,11 @@ Diese Datei liest du automatisch. Die Person, mit der du sprichst, hat die Portf
 - Die Website liegt in `site/` (Startseite `site/index.html`). Nur dieser Ordner geht online.
 - Schon erledigt, NICHT neu machen: Schriften liegen in `site/schriften/`, Telefonhörer in `site/bilder/telefon.webp`, Impressum und Datenschutz (`site/impressum.html`, `site/datenschutz.html`) mit Platzhaltern, Favicon-Siegel (`site/favicon.svg`), Platz für Vorschaubild beim Teilen, Bild-Stile für echte Fotos, Video-Code (Beispiel als Kommentar über „Meine Arbeiten“).
 - Die Seite ist schon über Netlify online, noch mit Platzhaltern. Alles, was in `main` landet, geht automatisch live. Sie muss NICHTS einrichten.
-- Schlag ihr NIE vor, etwas herunterzuladen oder zu installieren.
+- Schlag ihr NIE vor, etwas herunterzuladen oder zu installieren. (Einzige Ausnahme: Google Drive oder Dropbox, wenn sie es schon hat, für große Videos.)
 
 ## Deine Werkzeuge (spart dir viel Zeit)
-- `python3 werkzeuge/medien.py ORDNER` macht aus allen geschickten Dateien auf einmal: Videos als MP4 (720p, klein) mit Vorschaubild aus dem schärfsten Moment und Fotos als WebP. Am Ende zeigt es eine Übersicht (`werkzeuge/ausgabe/uebersicht.jpg`). Sieh dir die Übersicht an und verteile damit die Bilder (Porträt, Über mich, Fotocontent) und Videos.
+- `python3 werkzeuge/medien.py ORDNER_ODER_LINK` macht aus allen Dateien auf einmal: Videos als MP4 (720p, klein) und Fotos als WebP. Es nimmt auch direkt ihren Google-Drive- oder Dropbox-Link und lädt alles selbst herunter. Am Ende gibt es eine Übersicht (`werkzeuge/ausgabe/uebersicht.jpg`). Damit verteilst du die Bilder (Porträt, Über mich, Fotocontent) und Videos.
+- **Vorschaubilder der Videos wählst DU mit den Augen aus, nie automatisch.** Für jedes Video gibt es `werkzeuge/ausgabe/kandidaten-video-N.jpg` mit 12 nummerierten Standbildern. Sieh dir jedes an und nimm das schönste: Gesicht gut zu sehen, Augen offen, freundlicher Ausdruck oder Produkt klar im Bild, möglichst ohne eingeblendete Untertitel, nicht verwackelt. Dann `python3 werkzeuge/medien.py --vorschau video-N NUMMER`. Die Vorschaubilder sollen zusammen ruhig und hochwertig wirken.
 - `node werkzeuge/pruefen.js` erstellt Screenshots (Handy + Laptop) in `werkzeuge/ausgabe/`, Favicons und das Vorschaubild für geteilte Links. Danach listet es alles, was noch fehlt: Platzhalter, kaputte Links und zu große Dateien. Lass es nach jeder Änderung laufen.
 
 ## So sprichst du mit ihr
@@ -37,15 +38,24 @@ Begrüß sie und sag: „Das dauert insgesamt nur ein paar Minuten für dich, de
 > 7. 3 Wörter, die dich beschreiben:
 > 8. Für das Impressum (muss jede Website haben): Vor- und Nachname und deine Adresse
 >
-> Und dann schick mir einfach alle Fotos und Videos, die du zeigen willst, auf einmal. Am besten 1–2 Fotos von dir und 3–6 Videos. Du musst nichts verkleinern oder sortieren.
+> Und dann brauche ich deine Fotos und Videos: am besten 1–2 Fotos von dir und 3–6 Videos. Du musst nichts verkleinern oder sortieren.
+> - **Fotos** kannst du einfach hier in den Chat schicken.
+> - **Videos** sind meistens zu groß für den Chat (über 30 MB). Leg sie deshalb in einen Ordner bei Google Drive und schick mir den Link:
+>   1. Google Drive öffnen (App oder drive.google.com) → **+** → **Ordner**, Name z. B. „Portfolio“.
+>   2. Ordner öffnen → **+** → **Hochladen** → Videos auswählen.
+>   3. Beim Ordner auf **⋮** (drei Punkte) → **Teilen** → bei „Allgemeiner Zugriff“ **Jeder mit dem Link** wählen → **Link kopieren**.
+>   4. Link hier einfügen. Fertig!
+>
+> Wenn die Videos klein genug sind, kannst du sie auch direkt hier schicken. Und wenn du lieber Dropbox nutzt, geht das genauso.
 
 - Fehlt danach etwas Wichtiges, frag es in EINER kurzen Nachricht nach. Unwichtiges lässt du weg oder füllst es sinnvoll und ehrlich selbst.
-- Sind Dateien zu groß für den Chat: Bitte sie um einen Google-Drive-Link („Jeder mit dem Link“).
+- Klappt der Link nicht, ist er fast immer nicht auf „Jeder mit dem Link“ gestellt. Sag ihr genau diesen einen Schritt noch mal.
+- Haben ihre Videos eingebrannte Untertitel und sie hat noch die Version ohne Text, frag einmal, ob sie die lieber schickt. Sonst kein Problem.
 - Farbe: Bleibt Weinrot. Nur wenn sie von sich aus eine andere Farbe möchte, passe `--wine` an. Wähl dann einen dunklen, edlen Ton.
 
 ## DANN BAUST DU (ohne Rückfragen, in einem Durchgang)
 1. Arbeite in einem eigenen Zweig (z. B. `meine-seite`).
-2. Speichere ihre Dateien in einem Ordner außerhalb von `site/` und lass `werkzeuge/medien.py` darüber laufen.
+2. Speichere ihre Chat-Dateien in einem Ordner außerhalb von `site/` und lass `werkzeuge/medien.py` darüber und über ihren Link laufen. Wähl danach für jedes Video das Vorschaubild aus (siehe Werkzeuge).
 3. Ersetze alle Platzhalter in `site/index.html`: Name (auch im Siegel-Buchstaben aller Siegel und in `favicon.svg`), Texte in ihrem Ton (3 Wörter), Fotos statt `class="ph"`, Videos, E-Mail, Social-Links, Seitentitel, Google-Beschreibung, Vorschau-Texte (`og:`).
 4. Bereiche mit `data-optional` (Marken, Ergebnisse, Kundenstimme) bleiben nur mit echtem Material, sonst löschen.
 5. Anfängerin (keine bezahlten Aufträge): Statt „Paid Ads“/„Organic“ gibt es nur EINE Gruppe „Beispiel-Content“, ohne Markenschilder.
